@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    display: flex;
+    
+}
+
+.navbar{
+    width: 250px;
+    background-color: black;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+.logo{
+    width: 100%;
+    height: 80px;
+    background-color: brown;
+}
+.home{
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    background-color: chartreuse;
+}
+.playlist{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-color: crimson;
+}
+.user{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    background-color: blueviolet;
+}
+
+.main-section{
+    width: calc(100% - 250px);
+    background-color: lightskyblue;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    
+    
+}
+.head{
+    height: 80px;
+    width: 100%;
+    background-color: blue;
+}
+.categ{
+    height: 50px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: darkgreen;
+}
+.music1{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    height: 300px;
+    background-color: darkgoldenrod;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.brano{
+    height: 80%;
+    width: 10%;
+    background-color: cornflowerblue;
+    
+}
+.player{
+    height: 80%;
+    width: 40%;
+    background-color: cyan;
+    
+}
+.audio{
+    height: 80%;
+    width: 15%;
+    background-color: blueviolet;
+    
+}
