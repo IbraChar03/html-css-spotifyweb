@@ -19,18 +19,72 @@ main{
     width: 100%;
     height: 80px;
     background-color: brown;
+    display: flex;
+    /* justify-content: center; */
+     align-items: center; 
+}
+.img-logo{
+    width: 60%;
+    margin-left: 20px;
 }
 .home{
     width: 100%;
-    height: 90px;
+    height: 100px;
     margin: auto;
     background-color: chartreuse;
 }
+.marg-home{
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.img-home{
+    width: 12%;
+    vertical-align: middle;
+}
+.text{
+    color: #a9a9a9;
+    font-size: 18px;
+}
 .playlist{
     width: 100%;
-    height: 300px;
+    height: 310px;
     margin: auto;
     background-color: crimson;
+    overflow-y: auto;
+}
+.play{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.square{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    
+    background:
+       linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0), 
+       #a9a9a9;
+    background-position:center;
+    background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.text-big{
+    color: #a9a9a9;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.text-name{
+    color: #a9a9a9;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 .user{
     width: 100%;
@@ -39,6 +93,23 @@ main{
     position: absolute;
     bottom: 0;
     background-color: blueviolet;
+    
+}
+.download{
+    width: 10%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.text-download{
+    color: #a9a9a9;
+    font-size: 18px;
+    margin-left: 5px;
+}
+hr{
+    width: 90%;
+    margin: 10px auto;
+    color: #414141;
+    
 }
 
 .main-section{
@@ -46,13 +117,43 @@ main{
     background-color: lightskyblue;
     height: calc(100vh - 80px);
     overflow-y: auto;
-    
-    
+    padding-top: 80px;
+       
+}
+.profile{
+    width: 10%;
+    background-color: gray;
+    object-fit: cover;
+     border-radius: 20px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+.name{
+    color: white;
+    font-size: 20px;
+
 }
 .head{
     height: 80px;
     width: 100%;
-    background-color: blue;
+    background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+.upgrade{
+    color: white;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+
 }
 .categ{
     height: 50px;
@@ -80,19 +181,94 @@ footer{
 }
 .brano{
     height: 80%;
-    width: 10%;
+    width: 12%;
     background-color: cornflowerblue;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
+.icon-brano{
+    color: #a9a9a9;
+    font-size: 15px;
+}
+.marg-icon{
+    margin-right: 15px;
+}
+.sinister{
+    width: 20%;
+    height: 80%;
+    vertical-align: middle;
+    
+}
+.sinister-name{
+    color: white;
+    font-size: 18px;
+    margin-left: -30px;
+}
+.brano-name{
+    color: #a9a9a9;
+    margin-left: -30px;
+}
+
+
 .player{
     height: 80%;
     width: 40%;
     background-color: cyan;
     
 }
+.player1{
+    width: 40%;
+    margin: auto;
+    height: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-player{
+    color: white;
+    font-size: 25px;
+}
+.player2{
+    width: 80%;
+    margin: auto;
+    height: 40%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.minute{
+    color: white;
+    font-size: 15px;
+}
+.border{
+    width: 80%;
+    height: 2px;
+    border: 5px solid grey;
+    display: flex;
+}
+
 .audio{
     height: 80%;
     width: 15%;
     background-color: blueviolet;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
+}
+.border2{
+    width: 50%;
+    height: 2px;
+    border: 5px solid grey;
+    display: flex;
+}
+.icon-audio{
+    color: white;
+    font-size: 15px;
 }
