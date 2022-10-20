@@ -19,10 +19,12 @@ body {
     z-index: 50;
     overflow-y: auto;
 }
+.navbar-mobile{
+    display: none;
+}
 .logo{
     width: 100%;
     height: 80px;
-    background-color: brown;
     display: flex;
     /* justify-content: center; */
      align-items: center; 
@@ -36,7 +38,7 @@ body {
     width: 100%;
     height: 100px;
     margin: auto;
-    background-color: chartreuse;
+    
 }
 .marg-home{
     margin-left: 20px;
@@ -165,7 +167,8 @@ hr{
 
 }
 .categ{
-    height: 50px;
+    /* height: 50px; */
+    max-width: 1400px;
     width: 60%;
     margin: auto;
     margin-top: 20px;
@@ -173,40 +176,38 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .link{
     text-decoration: none;
     color: #6c6f74;
     font-size: 15px;
 }
-.music1{
+.music1{ 
     width: 100%; 
-    margin: auto; 
+    /* margin: auto;  */
     margin-top: 50px; 
-    height: 350px;
+     /* height: 350px;    */
     background-color: darkgoldenrod;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
+    justify-content: space-around;
+  
 }
 .box-img{
-    height: 65%;
+      height: 50%;  
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
-.box-text{
-    height: 20%;
-    width: 100%;
-    display: flex;
-    
+.box-title{
+      height: 40%;  
+    width: 100%;  
 }
+
 .img{
     width: 100%;
-    height: 100%;
+     height: 100%;  
 }
 .title{
     font-size: 20px;
@@ -220,11 +221,50 @@ hr{
     text-align: center;
 }
 .col{
-    height: 100%;
-    width: calc(100% / 6 - 20px);
+     height: 100%;  
+    width: calc(100% / 6 - 10px);
     margin: 0 20px;
     background-color: brown;
 }
+.music2{
+    max-width: 1600px;
+    width: 532px; 
+     margin-top: 50px; 
+    height: 300px;
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+}
+.col2{
+    height: 100%;
+    width: 237px;
+    margin-left: 20px;
+    background-color: brown;
+}
+.col2-3{
+    height: 100%;
+    width: 237px;
+    
+    background-color: brown;
+}
+.box-img2{
+    height:70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     
+}
+
+.img2{
+    width: 100%;
+ }
+ .img3{
+    width: 100%;
+     border-radius: 100%; 
+    object-fit: cover;
+ }
 
 footer{
     height: 80px;
@@ -340,4 +380,73 @@ footer{
 .icon-audio{
     color: white;
     font-size: 15px;
+}
+@media screen and (max-width:480px) {
+
+    .navbar-mobile{
+        width: 80px;
+        background-color: black;
+        height: calc(100vh - 80px);
+        z-index: 50;
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        /* justify-content: center; */
+         align-items: center; 
+         justify-content: center;
+    }
+    .home{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+       
+    }
+    .img-logo2{
+        width: 60%;
+        text-align: center;
+        
+    }
+    .img-home{
+        width: 60%;
+        filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);  
+        margin-bottom: 10px; 
+    }
+    .main-section{
+        width: calc(100% - 80px);  
+    }
+    .user-mobile{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        top:340px;
+    
+        
+    }
+    .download-mobile{
+        width: 30%;
+        text-align: center;
+       
+
+    }
+    .cent{
+        text-align: center;
+    }
+    .profile{
+        width: 50%;
+        background-color: gray;
+        object-fit: cover;
+         border-radius: 100%; 
+         text-align: center;
+         margin-top: 30px;
+
+
+
+    
+    }
 }
