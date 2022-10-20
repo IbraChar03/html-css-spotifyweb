@@ -53,10 +53,9 @@ body {
     vertical-align: middle;
     filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);   
 }
-.img-home2{
-    width: 12%;
-    vertical-align: middle;
-    filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);   
+.filter{
+    filter: brightness(0) invert(1);
+
 }
 .text{
     color: #a9a9a9;
@@ -80,6 +79,7 @@ body {
     padding-top: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
+
 }
 .square{
     display:inline-block;
@@ -115,7 +115,7 @@ body {
      background-color: black;
     position: fixed;
     bottom:80px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
    
 }
 .download{
@@ -256,7 +256,7 @@ hr{
 }
 .box2{
     max-width: calc(1300px / 3 - 10px);
-    margin: 10px -10px;
+    margin: 10px;
     height: 100%;
     /* background-color: blue; */
     display: flex;
@@ -525,7 +525,7 @@ footer{
 
 
 /* mobile */
-@media screen and (max-width:510px) {
+@media screen and (max-width:580px) {
     .categ{
         width: 100%;
         flex-wrap: wrap;
