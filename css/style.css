@@ -146,7 +146,7 @@ hr{
 .profile{
     width: 10%;
     background-color: gray;
-    object-fit: cover;
+    object-fit: cover; 
      border-radius: 20px; 
     margin-left: 10px;
     margin-right: 10px;
@@ -314,8 +314,8 @@ hr{
     position: relative;
      
 }
-.box-img2:hover .img{
-    background-color: rgba(8, 28, 145, 0.5);
+.box-img:hover .img3{
+    opacity:0.3;
 }
 .box-img2:hover .circle{
     display: block;
@@ -328,7 +328,7 @@ hr{
  .img3{
     width: 100%;
      border-radius: 100%; 
-    object-fit: cover;
+     object-fit: cover;  
  }
 
 footer{
