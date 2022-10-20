@@ -43,17 +43,27 @@ body {
     margin-left: 20px;
      padding-top: 5px; 
 }
+.deco{
+    text-decoration: none;
+    color: #a9a9a9;
+}
 
 .img-home{
     width: 12%;
     vertical-align: middle;
-    filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);  
-
-    
+    filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);   
+}
+.img-home2{
+    width: 12%;
+    vertical-align: middle;
+    filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);   
 }
 .text{
     color: #a9a9a9;
     font-size: 15px;
+}
+.white{
+    color: white;
 }
 .playlist{
     width: 100%;
@@ -158,6 +168,7 @@ hr{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 50;
     
 }
 .upgrade{
@@ -168,6 +179,10 @@ hr{
     border: 1px solid white;
 
 }
+.up:hover{
+   transform: scale(1.1);
+}
+
 .categ{
     /* height: 50px; */
     max-width: 1400px;
@@ -238,11 +253,37 @@ hr{
     display: flex;
     justify-content: space-around;
     
+}
+.box2{
+    max-width: calc(1300px / 3 - 10px);
+    margin: 10px -10px;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
 
 }
 .box-img{
       height: 70%;  
     width: 100%;
+    position: relative;
+}
+.box-img:hover .img{
+    opacity:0.3;
+}
+.box-img:hover .circle{
+    display: block;
+    opacity: 1;
+}
+.circle{
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 .box-title{
       height: 30%;  
@@ -268,9 +309,17 @@ hr{
 .box-img2{
     height:70%;
     width: 100%;
-    display: flex;
+     display: flex; 
     justify-content: center;
+    position: relative;
      
+}
+.box-img2:hover .img{
+    background-color: rgba(8, 28, 145, 0.5);
+}
+.box-img2:hover .circle{
+    display: block;
+    opacity: 1;
 }
 
 .img2{
@@ -371,6 +420,24 @@ footer{
     height: 5px;
     background-color: white;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cerchio{
+    color: white;
+   display: inline-block;
+   opacity: 0;
+ 
+}
+.line2:hover .cerchio{
+    display: block;
+    opacity: 1;
+}
+.line4:hover .cerchio{
+    display: block;
+    opacity: 1;
+   
 }
 
 .audio{
@@ -406,6 +473,9 @@ footer{
     height: 5px;
     background-color: white;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
 }
 .icon-audio{
@@ -445,6 +515,9 @@ footer{
     .icon-audio{
         font-size: 15px;
         margin-right: 5px;
+    }
+    .brano{
+        max-width: 180px;
     }
 
     
