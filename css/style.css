@@ -16,7 +16,9 @@ body {
     width: 250px;
     background-color: black;
     height: calc(100vh - 80px);
-    z-index: 50;
+    z-index: 50; 
+     
+    
 }
 .navbar-mobile{
     display: none;
@@ -43,6 +45,10 @@ body {
     margin-left: 20px;
      padding-top: 5px; 
 }
+
+.marg-home:hover{
+    filter: brightness(0) invert(1);
+}
 .deco{
     text-decoration: none;
     color: #a9a9a9;
@@ -66,11 +72,10 @@ body {
 }
 .playlist{
     width: 100%;
-    height: 350px; 
-    padding-bottom: 20px;
+    height: calc(100% - 100px - 80px - 80px);
     margin: auto;
     /* background-color: crimson;  */
-    overflow-y: auto;
+     overflow-y: auto; 
 }
 
 .play{
@@ -80,6 +85,13 @@ body {
     margin-left: 20px;
     margin-bottom: 10px;
 
+}
+.text-big:hover{
+    color: white;
+}
+
+.deco:hover{
+    color: white;
 }
 .square{
     display:inline-block;
@@ -91,7 +103,7 @@ body {
       linear-gradient(#000 0 0), 
        #a9a9a9;
     background-position:center;
-    background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-size: 50% 2px,2px 50%; 
     background-repeat:no-repeat;
     vertical-align: middle;
     margin-left: 20px;
@@ -110,13 +122,9 @@ body {
 }
 .user{
     width: 250px;
-    /* height: 80px;  */
+    height: 80px;  
     margin: auto;
      background-color: black;
-    position: fixed;
-    bottom:80px;
-    padding-bottom: 5px; 
-   
 }
 .download{
     width: 8%;
@@ -168,7 +176,7 @@ hr{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 49;
     
 }
 .upgrade{
@@ -194,6 +202,9 @@ hr{
     justify-content: space-around;
     align-items: center;
     /* flex-wrap: wrap; */
+}
+.link:hover {
+    color: white;
 }
 
 .link{
@@ -338,6 +349,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .brano{
     height: 80%;
