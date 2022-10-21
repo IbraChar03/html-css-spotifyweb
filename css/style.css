@@ -287,6 +287,7 @@ hr{
 .subtitle2{
     color:#a9a9a9;
     margin-top: 10px;
+    font-size: 18px;
     
 }
 .music3{ 
@@ -709,4 +710,27 @@ footer{
         margin-right: 10px;
     }
 
+}
+@media screen and (max-width: 430px) {
+     .music3{
+        justify-content: center;
+
+    } 
+    .box1{
+        width: 100%;
+         display: block; 
+        text-align: center;
+        margin:0px;
+
+    }
+    .box2{
+        width: 100%;
+        display: block;
+       
+    }
+     .col3{
+        width: 90%;
+        margin-bottom: 20px;
+    } 
+    
 }
