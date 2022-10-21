@@ -5,7 +5,7 @@
 }
 main{
     width: 100%;
-    display: flex;
+    display: flex; 
     
 }
 body {
@@ -18,7 +18,10 @@ body {
     height: calc(100vh - 80px);
     z-index: 50; 
      
-    
+}
+.raggr{
+    height: calc(100% - 80px);
+    width: 100%;
 }
 .navbar-mobile{
     display: none;
@@ -27,9 +30,8 @@ body {
     width: 100%;
     height: 80px;
     display: flex;
-    /* justify-content: center; */
      align-items: center; 
-     
+     background-color: black;
 }
 .img-logo{
     width: 60%;
@@ -44,6 +46,7 @@ body {
 .marg-home{
     margin-left: 20px;
      padding-top: 5px; 
+     position: relative;
 }
 
 .marg-home:hover{
@@ -57,8 +60,10 @@ body {
 .img-home{
     width: 12%;
     vertical-align: middle;
-    filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);   
+    filter: invert(63%) sepia(98%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(118%);    
 }
+
+
 .filter{
     filter: brightness(0) invert(1);
 
@@ -66,6 +71,21 @@ body {
 .text{
     color: #a9a9a9;
     font-size: 15px;
+}
+.text2{
+    color: #a9a9a9;
+    font-size: 15px;
+    position: relative;
+    z-index : 1;
+}
+.text2:before{
+    content : "";
+    position: absolute;
+    right : 75px;
+    top  : 0px;
+    height  : 25px;
+    width   : 40%;  
+    border-left: 5px solid #adff2f;
 }
 .white{
     color: white;
@@ -79,7 +99,7 @@ body {
 }
 
 .play{
-    font-size: 18px;
+    font-size: 23px;
     color: white;
     padding-top: 20px;
     margin-left: 20px;
@@ -92,6 +112,7 @@ body {
 
 .deco:hover{
     color: white;
+
 }
 .square{
     display:inline-block;
@@ -133,7 +154,7 @@ body {
 }
 .text-download{
     color: #a9a9a9;
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 5px;
 }
 hr{
@@ -149,6 +170,7 @@ hr{
     height: calc(100vh - 80px);
     overflow-y: auto;
      padding-top: 80px; 
+     flex-grow: 1;
        
 }
 .profile{
@@ -163,13 +185,13 @@ hr{
 }
 .name{
     color: white;
-    font-size: 15px;
+    font-size: 18px;
 
 }
 .head{
     height: 80px;
     width: 100%;
-    background-color: #080b12;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -181,10 +203,11 @@ hr{
 }
 .upgrade{
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px 30px;
     border-radius: 20px;
     border: 1px solid white;
+    margin-right: 30px;
 
 }
 .up:hover{
@@ -193,7 +216,7 @@ hr{
 
 .categ{
     /* height: 50px; */
-    max-width: 1400px;
+     max-width: 1400px; 
     width: 60%;
     margin: auto;
     margin-top: 20px;
@@ -203,14 +226,41 @@ hr{
     align-items: center;
     /* flex-wrap: wrap; */
 }
-.link:hover {
+.link:hover, .link2:hover {
     color: white;
+
 }
+
 
 .link{
     text-decoration: none;
     color: #6c6f74;
     font-size: 15px;
+}
+/* .link2{
+    text-decoration: none;
+    color: #6c6f74;
+    font-size: 15px;
+    border-bottom: 2px solid green;
+    
+} */
+.link2{
+    text-decoration: none;
+    color: #6c6f74;
+    font-size: 15px;
+    position: relative;
+  z-index : 1;
+    
+
+}
+.link2:before{
+    content : "";
+    position: absolute;
+    left    : 25px;
+    top  : 20px;
+    height  : 1px;
+    width   : 40%;  /* or 100px */
+    border-bottom: 2px solid #adff2f;
 }
 .marg{
     margin-right: 10px;
@@ -240,7 +290,6 @@ hr{
     
 }
 .music3{ 
-    max-width: 1800px;
     width: 100%;  
     margin-top: 30px; 
      /* height: 350px;    */
@@ -257,7 +306,7 @@ hr{
    /* background-color: brown; */
 }
 .box1{
-    max-width: calc(1300px / 3 - 10px);
+    width: calc(1300px / 3 - 10px);
     margin: 10px;
     height: 100%;
     /* background-color: blue; */
@@ -300,6 +349,14 @@ hr{
       height: 30%;  
     width: 100%;  
 }
+.deco2{
+    text-decoration: none;
+    color: white;
+}
+.deco3{
+    text-decoration: none;
+    color: #a9a9a9;
+}
 
 .img{
     width: 100%;
@@ -315,6 +372,7 @@ hr{
     color:#a9a9a9;
     margin-top: 10px;
     text-align: center;
+    font-size: 18px;
 }
 
 .box-img2{
@@ -377,7 +435,7 @@ footer{
 }
 .sinister-name{
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     
 }
 .brano-name{
@@ -496,15 +554,18 @@ footer{
     margin-right: 20px;
 }
 
+
 /* medium */
-@media screen and (max-width:1300px){
+@media screen and (max-width:1310px){
     .categ{
         width: 80%;
         flex-wrap: wrap;
         line-height: 40px;
     }
+    .link2:before{
+        top  : 32px; 
+    }
 
-    
 }
 /* tablet */
 @media screen and (max-width:798px){
@@ -519,6 +580,10 @@ footer{
     .line4{
         width: 20px;
     }
+    .link2:before{
+        top  : 30px; 
+    }
+    
     .icon-player{
         color: white;
         font-size: 25px;
@@ -534,10 +599,21 @@ footer{
 
     
 }
+@media screen and (max-width:710px) {
+    .brano{
+        display: none;
+    }
+    footer{
+        justify-content: space-around;
+    }
+    
+    
+}
 
 
 /* mobile */
 @media screen and (max-width:580px) {
+    
     .categ{
         width: 100%;
         flex-wrap: wrap;
@@ -552,7 +628,7 @@ footer{
         width: 80px;
         background-color: black;
         height: calc(100vh - 80px);
-        z-index: 50;
+        /* z-index: 50;  */
         display: block;
     }
     .navbar{
@@ -565,11 +641,13 @@ footer{
         /* justify-content: center; */
          align-items: center; 
          justify-content: center;
+         background-color: black;
     }
     .home{
         width: 100%;
         height: 400px;
         text-align: center;
+        background-color: black;
        
     }
     .img-logo2{
@@ -588,11 +666,9 @@ footer{
 
     .user-mobile{
         width: 80px;
+       height: 80px;  
         margin: auto;
-         background-color: black;
-        position: fixed;
-        bottom:80px;
-        padding-bottom: 5px;
+     background-color: black;
     }
     .download-mobile{
         width: 30%;
@@ -603,13 +679,17 @@ footer{
     .cent{
         text-align: center;
     }
+    .upgrade{
+        font-size: 15px;
+        padding: 8px 20px;
+    }
     .profile{
         width: 50%;
         background-color: gray;
         object-fit: cover;
          border-radius: 100%; 
          text-align: center;
-         margin-top: 30px;
+         margin-top: 0px;
     
     }
     .line1{
@@ -618,12 +698,7 @@ footer{
     .line2{
         width: 30px;
     }
-    .line3{
-        display: none;
-    }
-    .line4{
-        display: none;
-    }
+
     .icon-player{
         color: white;
         font-size: 20px;
@@ -632,9 +707,6 @@ footer{
     .icon-audio{
         font-size: 15px;
         margin-right: 10px;
-    }
-    .brano{
-        width: 100px;
     }
 
 }
