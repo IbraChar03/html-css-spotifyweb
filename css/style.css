@@ -331,10 +331,12 @@ hr{
 }
 .box-img:hover .img{
     opacity:0.3;
+    cursor: pointer;
 }
 .box-img:hover .circle{
     display: block;
     opacity: 1;
+    cursor: pointer;
 }
 .circle{
     font-size: 60px;
