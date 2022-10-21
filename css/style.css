@@ -732,5 +732,8 @@ footer{
         width: 90%;
         margin-bottom: 20px;
     } 
+    .upgrade{
+        padding: 10px 15px;
+    }
     
 }
